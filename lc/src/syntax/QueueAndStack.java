@@ -26,7 +26,7 @@ public class QueueAndStack {
 
     private static void UsingAsStack() {
         //作为栈使用
-        Deque<Integer> stack=new LinkedList<>();
+        Deque<Integer> stack = new LinkedList<>();
         System.out.println();
         stack.addFirst(1);
         stack.addFirst(2);
@@ -34,6 +34,9 @@ public class QueueAndStack {
         stack.addFirst(4);
         stack.push(5);
 //        stack.add(5);
+        System.out.println();
+        showall(stack);
+        stack.pop();
         System.out.println();
         showall(stack);
         stack.pollFirst();   //获取并移除栈顶元素
