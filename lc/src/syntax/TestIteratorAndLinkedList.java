@@ -16,10 +16,14 @@ public class TestIteratorAndLinkedList {
         a.add("4");
         a.addFirst("0");
         a.addLast("6");
-        Iterator iter =a.iterator();
+//        Iterator iter =a.iterator();
+//        while(iter.hasNext()){
+//            String str = (String) iter.next();
+//            System.out.println(str);
+//        }
+        Iterator<String> iter = a.iterator();
         while(iter.hasNext()){
-            String str = (String) iter.next();
-            System.out.println(str);
+            System.out.println(iter.next());
         }
     }
 }
