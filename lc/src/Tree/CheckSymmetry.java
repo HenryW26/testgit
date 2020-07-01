@@ -2,6 +2,9 @@ package Tree;
 
 public class CheckSymmetry {
     public boolean isSymmetric(TreeNode root) {
+        if(root==null){
+            return true;
+        }
         return checkout(root.left,root.right);
     }
     public boolean checkout(TreeNode p,TreeNode q){
