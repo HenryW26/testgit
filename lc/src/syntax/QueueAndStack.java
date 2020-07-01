@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 public class QueueAndStack {
+    //作为队列使用
     private static void UsingAsQueue(){
         Deque<Integer> queue = new ArrayDeque<>();
         System.out.println("isempty?"+queue.isEmpty());
@@ -17,29 +18,39 @@ public class QueueAndStack {
         queue.addLast(2);
         queue.addLast(3);
         queue.addLast(4);
+        queue.add(5);//add() and addLast() have same effect
+
         showall(queue);
         System.out.println("\nisempty?"+queue.isEmpty());
+
         queue.pollFirst();
-//        queue.pollLast();
+        showall(queue);
+
+        queue.pop();//pop() and pollFirst() have same effect
+        System.out.println();
         showall(queue);
     }
 
+    //作为栈使用
     private static void UsingAsStack() {
-        //作为栈使用
         Deque<Integer> stack = new LinkedList<>();
         System.out.println();
         stack.addFirst(1);
         stack.addFirst(2);
         stack.addFirst(3);
         stack.addFirst(4);
-        stack.push(5);
+        stack.push(5);//push() and addFirst() have same effect
 //        stack.add(5);
         System.out.println();
         showall(stack);
+
         stack.pop();
+
         System.out.println();
         showall(stack);
-        stack.pollFirst();   //获取并移除栈顶元素
+
+        stack.pollFirst();   //获取并移除栈顶元素,pop() and pollFirst() have same effect
+
         System.out.println();
         showall(stack);
     }
