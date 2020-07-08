@@ -1,4 +1,4 @@
-package FactoryDesignPattern;
+package DesignPattern.FactoryDesignPattern;
 
 public class Square implements Shape {
     @Override

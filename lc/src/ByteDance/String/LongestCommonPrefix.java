@@ -1,4 +1,4 @@
-package ByteDance;
+package ByteDance.String;
 
 import java.util.*;
 

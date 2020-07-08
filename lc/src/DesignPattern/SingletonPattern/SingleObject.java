@@ -1,4 +1,4 @@
-package SingletonPattern;
+package DesignPattern.SingletonPattern;
 
 public class SingleObject {
     //创建 SingleObject 的一个对象
