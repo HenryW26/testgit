@@ -12,8 +12,8 @@ public class TestIteratorAndLinkedList {
         a.add("1");
         a.add("2");
         a.add("3");
-        a.add("5");
         a.add("4");
+        a.add("5");
         a.addFirst("0");
         a.addLast("6");
 //        Iterator iter =a.iterator();
